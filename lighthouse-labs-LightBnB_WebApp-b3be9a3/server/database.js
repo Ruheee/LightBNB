@@ -78,7 +78,7 @@ const getAllReservations = function(guest_id, limit = 10) {
     WHERE reservations.guest_id = $1
     LIMIT $2;`, [guest_id, limit])
     .then((result) => {
-      console.log(result.rows)
+      // console.log(result.rows)
       return result.rows;
     })
     .catch((err) => {
@@ -101,8 +101,9 @@ exports.getAllReservations = getAllReservations;
     SELECT properties.*, avg(property_reviews.rating) as average_rating
     FROM properties
     JOIN property_reviews ON properties.id = property_id
-    WHERE 1 = 1 
+    WHERE 1 = 1
     `
+    
     if (options.city) {
       queryParams.push(`%${options.city}%`);
       queryString += `AND city LIKE $${queryParams.length}\n`;
