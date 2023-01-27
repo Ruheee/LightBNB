@@ -1,6 +1,8 @@
 # LightBnB
-Lighthouse BnB is an app that will revolutionize the travel industry. It will allow homeowners to rent out their homes to people on vacation, creating an alternative to hotels and bed and breakfasts...There’s nothing else like it! Users can view property information, book reservations, view their reservations, and write reviews. We'll be creating the first ever application to do something like this and we will call it LighthouseBnB.
+A database application project developed as a part of Lighthouse Labs Web development course. The front-end is forked from lighthouse-labs/LightBnB_WebApp Install the LightBnB_WebApp npm install, run it npm run local, and view it at `localhost:3000`
+# ERD 
 
+## ERD Diagarm
 ['LighthouseBNB ERD'](./public/image/Screen%20Shot%202023-01-27%20at%201.41.29%20PM.png)
 
 ## Project Structure
