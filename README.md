@@ -47,3 +47,13 @@ A database application project developed as a part of Lighthouse Labs Web develo
   * `json` is a directory that contains a bunch of dummy data in `.json` files.
   * `database.js` is responsible for all queries to the database. It doesn't currently connect to any database, all it does is return data from `.json` files.
 
+# DEPENDENCIES 
+
+* bcrypt
+* body-parser
+* cookies-session
+* express
+* nodemon 
+* postgress
+
+
