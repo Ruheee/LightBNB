@@ -121,10 +121,9 @@ exports.getAllReservations = getAllReservations;
       queryString += `AND cost_per_night >= $${queryParams.length - 1}\n`
       queryString += `AND cost_per_night <= $${queryParams.length}\n`
     } 
-    
+    queryString += `GROUP BY properties.id\n`
     if (options.minimum_rating) {
       queryParams.push(options.minimum_rating);
-      queryString += `GROUP BY properties.id\n`
       queryString += `HAVING avg(property_reviews.rating) >= $${queryParams.length}`
     }
     queryParams.push(limit);
